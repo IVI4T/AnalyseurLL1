@@ -8,6 +8,7 @@ $(document).ready(function(){
     })
 
     function inputs(name,value,callBack){
+        callBack(value);
         $("#parameters").append(
             $('<div>').attr('id',name).addClass("form-group")
                 .append($('<label>').text(name))
