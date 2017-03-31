@@ -62,7 +62,7 @@ function listRules(str){
     var list = Array();
     for (var i in str){
         if(str[i].length!=0){
-            rule = str[i].replace(separator,"").split(/(\s+)/).filter( function(e) { return e.trim().length > 0; } ); //enlève fleche et espaces
+            rule = str[i].replace(separator," ").split(/(\s+)/).filter( function(e) { return e.trim().length > 0; } ); //enlève fleche et espaces
             first =rule.shift();
             if(list[first]){
                 list [first][list[first].length] = rule;
