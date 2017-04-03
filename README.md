@@ -44,3 +44,6 @@ Symboles Directeurs :
 |A|	AA b|	c|	premiers(AA)|
 |A	|^	|$	|suivants( A)|
 |AA	|c	|c	|premiers(c)|
+
+Calcul donne la manière dont le SD est calculé pour la règle A --> ALPHA.
+
