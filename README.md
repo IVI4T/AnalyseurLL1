@@ -46,4 +46,5 @@ Symboles Directeurs :
 |AA	|c	|c	|premiers(c)|
 
 Calcul donne la manière dont le SD est calculé pour la règle A --> ALPHA.
+Les règles contenant des intersections sont surlignées en rouge. 
 
