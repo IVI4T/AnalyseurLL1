@@ -41,6 +41,6 @@ Symboles Directeurs :
 
 |A|	ALPHA|	SD|	Calcul|
 |--|----|--|----|
-|A|	AA| b|	c|	premiers(AA)|
+|A|	AA b|	c|	premiers(AA)|
 |A	|^	|$	|suivants( A)|
 |AA	|c	|c	|premiers(c)|
