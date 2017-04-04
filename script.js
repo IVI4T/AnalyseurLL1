@@ -264,7 +264,7 @@ function getNext(currentRule,rules,premiers,suivants,currentRuleId){
 var str = $("#grammaire").val();
 
 var rules = listRules(str);
-println(rules);
+//println(rules);
 // Premiers
 var premiers = premierInit(rules);
 var addlinePremier = printTab("tableau","idt",rules);
@@ -324,7 +324,7 @@ function sDSnit(rules){
 }
 var sds = sDSnit(rules);
 
-println(sds)
+//println(sds)
 for(rulename in rules){
     var css = "";
     var inters = Array();
