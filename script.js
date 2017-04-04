@@ -1,11 +1,7 @@
 var separator, empty, axiome;
 var ensembleVide = "∅";
 var finSuivant = "$";
-var colors = ["#6C082C","#97002F","#A00030","#B90131","#DC1637","#E31E39","#EF313D","#FC523B","#FFFFFF","#FB6A34","#FF6237"]
-for(col in colors){
-    println(".bg-red"+col+"{ background-color:"+colors[col]+"; }"+
-        ".bg-red"+col+":hover{ background-color:"+colors[parseInt(col)+1]+"; }" )
-}
+
 $(document).ready(function(){
     $('#grammaire').change(function() {
         AnalyseLL1();  
