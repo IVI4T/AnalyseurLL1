@@ -1,18 +1,22 @@
 var separator, empty, axiome;
 var ensembleVide = "∅";
 var finSuivant = "$";
-
+var colors = ["#6C082C","#97002F","#A00030","#B90131","#DC1637","#E31E39","#EF313D","#FC523B","#FFFFFF","#FB6A34","#FF6237"]
+for(col in colors){
+    println(".bg-red"+col+"{ background-color:"+colors[col]+"; }"+
+        ".bg-red"+col+":hover{ background-color:"+colors[parseInt(col)+1]+"; }" )
+}
 $(document).ready(function(){
     $('#grammaire').change(function() {
         AnalyseLL1();  
-    })
+    }).attr('height','100px')
 
     function inputs(name,value,callBack){
         callBack(value);
         $("#parameters").append(
             $('<div>').attr('id',name).addClass("form-group")
                 .append($('<label>').text(name))
-                .append($('<input>').attr('name',name).attr('type','text').val(value).change(function(e){
+                .append($('<input>').addClass("form-control").attr('name',name).attr('type','text').val(value).change(function(e){
                      callBack($(this).val()); 
                      AnalyseLL1();
                 })
@@ -129,7 +133,7 @@ function printTab(idTarget,idContent,colonnes) {
     }
 
     $('<table>')
-        .addClass("table table-bordered table-hover")
+        .addClass("table table-bordered ")
         .append($('<thead>')
                 .append(line))
         .append($('<tbody>')
@@ -383,7 +387,7 @@ for(rulename in rules){
 
 var addligneSD = printTab("tableauSd","idsd",colones);
 var css="";
-
+var col = 0;
 for(s in sds){
     var sdr = sds[s];
     if(sdr.length==1){
@@ -401,8 +405,10 @@ for(s in sds){
                 break;
             }
         }
-        addligneSD([[s],sd.alpha,sd.sd,[sd.comment]],inte? "danger":"");
+        addligneSD([[s],sd.alpha,sd.sd,[sd.comment]],inte? "bg-red"+col+" text-white":"");
+
     }
+     col = col++ > 10 ? 0 : col;
 }
 
 
