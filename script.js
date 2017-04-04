@@ -383,7 +383,24 @@ for(rulename in rules){
 
 var addligneSD = printTab("tableauSd","idsd",colones);
 var css="";
-var col = 0;
+var col = (function(val){
+    var v = 0;
+    var asc = true;
+    return function(){
+        if(asc && v < 10){
+            return v++
+        }else{
+            asc = false;
+            if(v==0){
+                asc = true;
+                return v++;
+            }else{
+                return v--;
+            }
+        }
+    }
+})(10);
+
 for(s in sds){
     var sdr = sds[s];
     if(sdr.length==1){
@@ -391,7 +408,7 @@ for(s in sds){
         addligneSD([[s],sd.alpha,sd.sd,[sd.comment]],"");
         continue;
     }
-
+    var color = col();
     for(i in sdr){
         var sd = sdr[i];
         var inte = false;
@@ -401,10 +418,9 @@ for(s in sds){
                 break;
             }
         }
-        addligneSD([[s],sd.alpha,sd.sd,[sd.comment]],inte? "bg-red"+col+" text-white":"");
+        addligneSD([[s],sd.alpha,sd.sd,[sd.comment]],inte? "bg-red"+color+" text-white":"");
 
     }
-     col = col++ > 10 ? 0 : col;
 }
 
 

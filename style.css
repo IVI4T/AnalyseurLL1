@@ -39,15 +39,14 @@
         }
 
 
-
-
-.bg-red0{ background-color:#6C082C; }.bg-red0:hover{ background-color:#97002F; }
- .bg-red1{ background-color:#97002F; }.bg-red1:hover{ background-color:#A00030; }
- .bg-red2{ background-color:#A00030; }.bg-red2:hover{ background-color:#B90131; }
+ .bg-red0{ background-color:#6B082B; }.bg-red0:hover{ background-color:#85002F; }
+ .bg-red1{ background-color:#85002F; }.bg-red1:hover{ background-color:#B20032; }
+ .bg-red2{ background-color:#B20032; }.bg-red2:hover{ background-color:#B90121; }
  .bg-red3{ background-color:#B90131; }.bg-red3:hover{ background-color:#DC1637; }
  .bg-red4{ background-color:#DC1637; }.bg-red4:hover{ background-color:#E31E39; }
  .bg-red5{ background-color:#E31E39; }.bg-red5:hover{ background-color:#EF313D; }
  .bg-red6{ background-color:#EF313D; }.bg-red6:hover{ background-color:#FC523B; }
  .bg-red7{ background-color:#FC523B; }.bg-red7:hover{ background-color:#FA624B; }
  .bg-red8{ background-color:#FA624B; }.bg-red8:hover{ background-color:#FB6A34; }
- .bg-red9{ background-color:#FB6A34; }.bg-red9:hover{ background-color:#FF6237; }
+ .bg-red9{ background-color:#FB6A34; }.bg-red9:hover{ background-color:#FB8A34; }
+ .bg-red10{ background-color:#FB8A34; }.bg-red10:hover{ background-color:#FC9A64; }
