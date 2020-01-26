@@ -1,6 +1,6 @@
 # AnalyseurLL1
 
-Lien vers l'application: https://ivi4t.github.io/AnalyseurLL1/
+Lien vers l'application: https://mathieubrglt.github.io/AnalyseurLL1/
 
 Attention, si un symbole apparait dans la partie droite d'une règle il est considéré comme non terminal et inversement. 
 
